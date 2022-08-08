@@ -8,14 +8,14 @@
             <div class="col">
                 <nav>
                     <ul>
-                        <li style="--clr:#00ade1">
-                            <NuxtLink data-text="&nbsp;Home" to="/">&nbsp;Home&nbsp;</NuxtLink>
+                        <li style="--clr:#FFF">
+                            <a data-text="&nbsp;Home" href="#home">&nbsp;Home&nbsp;</a>
                         </li>
-                        <li style="--clr:#ffdd1c">
-                            <NuxtLink data-text="&nbsp;About" to="/about">&nbsp;About&nbsp;</NuxtLink>
+                        <li style="--clr:#FFF">
+                            <a data-text="&nbsp;About" href="#about">&nbsp;About&nbsp;</a>
                         </li>
-                        <li style="--clr:#00dc82">
-                            <NuxtLink data-text="&nbsp;Contact" to="/contact">&nbsp;Contact&nbsp;</NuxtLink>
+                        <li style="--clr:#FFF">
+                            <a data-text="&nbsp;Contact" href="#contact">&nbsp;Contact&nbsp;</a>
                         </li>
                     </ul>
                 </nav>
@@ -41,12 +41,13 @@
     text-align: center;
     vertical-align: middle;
     border: 2px solid white;
-    border-radius: 5px;
+    border-radius: 3px;
+    transition: 0.4s;
 }
 
-.coll:hover {
+.coll:active {
     border: 2px solid white;
-    border-radius: 10px;
+    box-shadow: 0px 0px 10px 4px rgb(255 255 255 / 26%)
 }
 
 .logo {

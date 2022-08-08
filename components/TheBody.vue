@@ -1,5 +1,5 @@
 <template>
-    <div class="container mt-5">
+    <div class="container mt-5" id="home">
         <h1 class="text-uppercase text-center">Ремонт стиральных машин с выездом на дом</h1>
         <div class="row mt-5">
             <div class="col d-flex align-items-center justify-content-center" v-for="info of store.get('ru').ru"
@@ -18,9 +18,24 @@
                 </div>
             </div>
         </div>
-        <hr>
-        <div>
-            <h3 class="text-center">{{ store.get('ru/2').title }}</h3>
+        <div class="mt-5">
+            <hr>
+            <div class="my-5">
+                <h3 class="text-center">{{ store.get('ru/2').title }}</h3>
+            </div>
+            <div class="row">
+                <div class="col mb-3" v-for="a of 5" :key="a">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <TheButton name="call now" url="tel://+998915905561" class="mt-5 m-3" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -33,9 +48,9 @@ import { store } from "@/store/store";
 hr {
     width: 100%;
     height: 5px;
-    color: #ffdd1c;
+    color: white;
     opacity: 1;
-    -webkit-text-stroke: 1px #ffdd1c;
+    -webkit-text-stroke: 1px white;
 }
 
 .card {
