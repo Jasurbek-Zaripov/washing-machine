@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: #252839;
+    background-color: var(--bs-gray-dark);
     color: white;
     overflow-x: hidden;
 }
@@ -27,6 +27,7 @@ ul {
     position: relative;
     display: flex;
     align-items: center;
+    margin: 0;
     gap: 30px;
 }
 
@@ -37,41 +38,44 @@ ul li {
 
 ul li a {
     position: relative;
-    font-size: 4em;
+    font-size: 1em;
+    font-weight: 400;
     text-decoration: none;
     line-height: 1em;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    color: white;
 }
 
 ul li a::before {
     content: attr(data-text);
+    white-space: nowrap;
+    transform: translateY(4px);
     position: absolute;
-    color: var(--clr);
+    color: white;
     width: 0;
     overflow: hidden;
     transition: 0.4s;
-    border-right: 8px solid var(--clr);
-    -webkit-text-stroke: 1px var(--clr);
+    border-right: 3px solid white;
+    -webkit-text-stroke: 1px white;
 
 }
 
 a:hover {
-    color: transparent;
+    color: white;
 }
 
-ul li a:active::before {
+ul li a:active::before,
+ul li a:hover::before {
     width: 100%;
-    color: var(--clr);
-    filter: drop-shadow(0 0 25px var(--clr));
+    color: white;
+    filter: drop-shadow(0 0 3px white);
 }
 
 .nav-active::before {
     width: 100%;
-    color: var(--clr);
-    filter: drop-shadow(0 0 25px var(--clr));
+    color: white;
+    filter: drop-shadow(0 0 3px white);
 }
 
 .coll {
@@ -79,6 +83,11 @@ ul li a:active::before {
     color: white !important;
 }
 
-.coll:active {
+.coll:active,
+.coll:hover {
     color: white !important;
+}
+
+.shadow {
+    box-shadow: 0 0.5rem 1rem black !important;
 }

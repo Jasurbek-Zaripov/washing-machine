@@ -27,7 +27,8 @@ a {
     transition: 0.4s;
 }
 
-a:active {
+a:active,
+a:hover {
     letter-spacing: 0.25em;
     background-color: transparent;
     box-shadow: 0 0 35px white;
@@ -65,7 +66,8 @@ a i::before {
     transition: 0.4s;
 }
 
-a:active i::before {
+a:active i::before,
+a:hover i::before {
     left: 0%;
     transform: translateX(-46%) rotate(62deg);
     box-shadow: 34px 21px white;
@@ -84,7 +86,8 @@ a i::after {
     transition: 0.4s;
 }
 
-a:active i::after {
+a:active i::after,
+a:hover i::after {
     left: 100%;
     transform: translateX(-46%) rotate(-62deg);
     box-shadow: 34px -21px white;
