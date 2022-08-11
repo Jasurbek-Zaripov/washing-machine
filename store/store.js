@@ -96,12 +96,12 @@ store.set('ru/lang', '/icons/ru.svg');
 store.set('uz/lang', '/icons/uz.svg');
 store.set('ru/menu', {
     home: 'Главная',
-    about: 'О нас',
+    about: 'Цени',
     contact: 'Контакт'
 });
 store.set('uz/menu', {
     home: 'Asosiy',
-    about: 'Biz haqimizda',
+    about: 'Narxlar',
     contact: 'Aloqa'
 });
 store.set('ru/price', {
@@ -135,6 +135,99 @@ store.set('uz/price', {
     ]
 });
 
+store.set('ru/step', {
+    title: 'Наши этапы работы',
+    items: [
+        { name: 'Связываетесь с нами', body: 'Позвоните по телефону или оставьте заявку на сайте. Мы будем у вас уже через 30 минут', img: '/img/step1.png' },
+        { name: 'Приезжает эксперт', body: 'Мастер проведет полную диагностику и расскажет про варианты ремонта', img: '/img/step2.png' },
+        { name: 'Делает ремонт', body: 'Только после вашего согласия приступаем к ремонту.', img: '/img/step3.png' },
+        { name: 'Вы Принимаете работу', body: 'Вы принимаете работы и получаете полный комплект документов - договор, чек, акт сдачи-приемки работ', img: '/img/step4.png' },
+    ]
+});
+store.set('uz/step', {
+    title: 'Ish bosqichlarimiz',
+    items: [
+        { name: 'Biz bilan bog\'laning', body: "Telefon orqali qo'ng'iroq qiling yoki saytda so'rov qoldiring. 30 daqiqada siz bilan bo'lamiz", img: '/img/step1.png' },
+        { name: 'Mutahasis keladi', body: "Usta to'liq tashxis qo'yadi va sizga ta'mirlash imkoniyatlari haqida gapirib beradi.", img: '/img/step2.png' },
+        { name: 'Ta\'mirlash ishlari', body: "Faqat sizning roziligingizdan keyin biz ta'mirlashni boshlaymiz.", img: '/img/step3.png' },
+        { name: 'Ishni qabul qilasiz', body: "Siz ishni qabul qilasiz va hujjatlarning to'liq to'plamini olasiz - shartnoma, chek, ishni qabul qilish dalolatnomasi", img: '/img/step4.png' },
+    ]
+});
+
+store.set('uz/logo', {
+    title: "Biz barcha markadagi kir yuvish mashinalarini ta'mirlaymiz",
+    items: [
+        '/logo/aeg.png',
+        '/logo/ardo.png',
+        '/logo/asko.png',
+        '/logo/atlant.png',
+        '/logo/beko.png',
+        '/logo/bosch.png',
+        '/logo/brandt.png',
+        '/logo/candy-logo.png',
+        '/logo/daewoo.png',
+        '/logo/electrolux.png',
+        '/logo/eurosoba.png',
+        '/logo/gorenje.png',
+        '/logo/haier.png',
+        '/logo/hansa-logo.png',
+        '/logo/hotpoint.png',
+        '/logo/indesit.png',
+        '/logo/kaiser.png',
+        '/logo/lg.png',
+        '/logo/miele-logo.png',
+        '/logo/samsung.png',
+        '/logo/siemens.png',
+        '/logo/vestel.png',
+        '/logo/whirlpool.png',
+        '/logo/zanussi.png',
+    ]
+});
+store.set('ru/logo', {
+    title: "Ремонтируем стиральные машины любых брендов",
+    items: [
+        '/logo/aeg.png',
+        '/logo/ardo.png',
+        '/logo/asko.png',
+        '/logo/atlant.png',
+        '/logo/beko.png',
+        '/logo/bosch.png',
+        '/logo/brandt.png',
+        '/logo/candy-logo.png',
+        '/logo/daewoo.png',
+        '/logo/electrolux.png',
+        '/logo/eurosoba.png',
+        '/logo/gorenje.png',
+        '/logo/haier.png',
+        '/logo/hansa-logo.png',
+        '/logo/hotpoint.png',
+        '/logo/indesit.png',
+        '/logo/kaiser.png',
+        '/logo/lg.png',
+        '/logo/miele-logo.png',
+        '/logo/samsung.png',
+        '/logo/siemens.png',
+        '/logo/vestel.png',
+        '/logo/whirlpool.png',
+        '/logo/zanussi.png',
+    ]
+});
+store.set('ru/info', {
+    img: '/icons/info.svg',
+    title: "О нас",
+    body1: "'Mater Stiral' более 5 лет выполняет любые работы по обслуживанию бытовой техники. Вы можете вызвать мастера в Ташкенте, он недорого осуществит срочный ремонт стиральных машин с выездом на дом, также произведет починку холодильников, плит и другой бытовой техники всех марок.",
+    body2: "Вызвать мастера можно в удобное для Вас время в любой округ Ташкента: в каждом районе города работают мастера и могут прибыть на заявку в течении часа.",
+    body3: "На произведенные нами работы по ремонту стиральных машин на дому в Ташкенте недорого дается гарантия не менее 6 месяцев.",
+    body4: "Три главные ценности «Mater Stiral» - оперативность, профессионализм и ориентированность на клиента.",
+});
+store.set('uz/info', {
+    img: '/icons/info.svg',
+    title: "Biz",
+    body1: "'Mater Stiral' 5 yildan ortiq vaqt davomida maishiy texnikaga texnik xizmat ko'rsatish bo'yicha har qanday ishni amalga oshirmoqda. Siz Toshkentda Mutaxassis chaqirishingiz mumkin, u zudlik bilan Xonadonlarga borib kir yuvish mashinalarini ta'mirlashni arzon narxlarda amalga oshiradi, shuningdek, muzlatgich, pechka va boshqa barcha rusumdagi maishiy texnikalarni ta'mirlaydi.",
+    body2: "Mutahasis chaqirish siz uchun qulay vaqtda Toshkentning istalgan tumanida bo'lishi mumkin: mutaxasislarimiz shaharning har bir tumanida ishlaydi va so'rov bo'yicha bir soat ichida yetib borishi mumkin.",
+    body3: "Toshkentda kir yuvish mashinalarini uyda ta'mirlash bo'yicha ishimiz uchun kamida 1 yil kafolat beriladi.",
+    body4: "'Mater Stiral' ning uchta asosiy qadriyati - samaradorlik, professionallik va mijozlarga e'tibor.",
+});
 let lang = { now: 'ru' };
 
 import mit from 'mitt';

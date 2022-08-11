@@ -11,10 +11,19 @@
     filter: brightness(0) invert(1)
 }
 
+.light-logo {
+    filter: brightness(0%) !important;
+}
+
 body {
     background-color: var(--bs-gray-dark);
     color: white;
     overflow-x: hidden;
+}
+
+.light {
+    background-color: white !important;
+    color: var(--bs-gray-dark) !important;
 }
 
 nav {
@@ -36,6 +45,10 @@ ul li {
     list-style: none;
 }
 
+.light-color {
+    color: var(--bs-gray-dark) !important;
+}
+
 ul li a {
     position: relative;
     font-size: 1em;
@@ -45,6 +58,12 @@ ul li a {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: white;
+}
+
+.light-color::before {
+    color: var(--bs-gray-dark) !important;
+    border-color: var(--bs-gray-dark) !important;
+    -webkit-text-stroke: 0px var(--bs-gray-dark) !important;
 }
 
 ul li a::before {
@@ -61,6 +80,10 @@ ul li a::before {
 
 }
 
+.light-color:hover {
+    color: var(--bs-gray-dark) !important;
+}
+
 a:hover {
     color: white;
 }
@@ -72,22 +95,16 @@ ul li a:hover::before {
     filter: drop-shadow(0 0 3px white);
 }
 
-.nav-active::before {
-    width: 100%;
-    color: white;
-    filter: drop-shadow(0 0 3px white);
-}
-
-.coll {
-    text-decoration: none !important;
-    color: white !important;
-}
-
-.coll:active,
-.coll:hover {
-    color: white !important;
+.light-color:active::before,
+.light-color:hover::before {
+    color: var(--bs-gray-dark) !important;
+    filter: drop-shadow(0 0 0px #343a40);
 }
 
 .shadow {
-    box-shadow: 0 0.5rem 1rem black !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.336) !important;
+}
+
+.light-shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.123) !important;
 }

@@ -7,6 +7,9 @@ export default defineNuxtConfig({
             htmlAttrs: {
                 lang: 'ru'
             },
+            script: [
+                { src: "https://code.iconify.design/1/1.0.4/iconify.min.js" }
+            ],
             title: 'Masterius',
             link: [
                 {
