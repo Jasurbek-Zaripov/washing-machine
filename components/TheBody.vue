@@ -4,14 +4,12 @@
         <div class="row mt-5">
             <div class="col d-flex align-items-center justify-content-center" v-for="info of data.items"
                 :key="info.img">
-                <div class="card mb-5" :class="mode ? 'light-border-color' : 'border-color'"
-                    style="max-width: 18rem; min-height: 155px;min-width: 350px;">
+                <div class="card mb-5 border-color" style="max-width: 18rem; min-height: 155px;min-width: 350px;">
                     <div class="card-header"> </div>
                     <div class="card-body">
                         <h5 class="card-title">
                             <div class="col d-flex justify-content-start align-items-start">
-                                <img class="logo me-2" :class="mode ? 'light-logo' : ''" :src="info.img"
-                                    style="height: 25px;" alt="">
+                                <img class="logo me-2" :src="info.img" style="height: 25px;" alt="">
                                 <h5>{{ info.title }}</h5>
                             </div>
                         </h5>
@@ -21,13 +19,13 @@
             </div>
         </div>
         <div class="mt-5">
-            <hr :class="mode && 'light-hr'">
+            <hr>
             <div class="my-5">
                 <h3 class="text-center">{{ data.item }}</h3>
             </div>
             <div class="row">
                 <div class="col mb-5" v-for="(problem, index) of data.problems" :key="index">
-                    <div class="card shadow" :class="mode && 'light-shadow'" style="width: 18rem;">
+                    <div class="card shadow" style="width: 18rem;">
                         <img :src="problem.img" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="height: 3rem; overflow-y: hidden;">{{ problem.title }}</h5>
@@ -43,7 +41,7 @@
             <h3 class="text-center">{{ data.price.title }}</h3>
             <div class="row">
                 <div class="col bb d-flex align-items-center justify-content-between px-5 py-3 m-2 text-nowrap"
-                    :class="mode && 'light-bb'" v-for="(price, idx) of data.price.items" :key="idx">
+                    v-for="(price, idx) of data.price.items" :key="idx">
                     <span class="d-inline-block"><b>{{ price.name }}</b></span>
                     <span class="d-inline-block ps-3">{{ price.price }}</span>
                 </div>
@@ -52,8 +50,7 @@
         <div class="mt-5">
             <h3 class="text-center mb-5">{{ data.steps.title }}</h3>
             <div class="d-flex justify-content-between" style="flex-wrap: wrap;">
-                <div class="step-body shadow" :class="mode && 'light-shadow'" v-for="(step, idx) of data.steps.items"
-                    :key="idx">
+                <div class="step-body shadow" v-for="(step, idx) of data.steps.items" :key="idx">
                     <div class="w-50 p-3">
                         <h1>{{ '0' + (idx + 1) }}</h1>
                         <h3 class="text-uppercase">{{ step.name }}</h3>
@@ -66,7 +63,7 @@
         <div class="mt-5">
             <h3 class="text-center">{{ data.logo.title }}</h3>
             <div class="d-flex align-items-center justify-content-center" style="flex-wrap: wrap;">
-                <img v-for="logo of data.logo.items" class="m-2 p-2 shadow" :class="mode && 'light-shadow'"
+                <img v-for="logo of data.logo.items" class="m-2 p-2 shadow"
                     style="height: 50px; background-color: white; border:2px solid white;border-radius: 5px;"
                     :key="logo" :src="logo" alt="">
             </div>
@@ -81,8 +78,7 @@
             </div>
             <div class="col">
                 <div class="d-flex align-items-center justify-content-center mb-2">
-                    <img :src="data.info.img" style="height: 30px;" alt="" class="logo me-2"
-                        :class="mode ? 'light-logo' : ''">
+                    <img :src="data.info.img" style="height: 30px;" alt="" class="logo me-2">
                     <h3 class="text-uppercase m-0">{{ data.info.title }}</h3>
                 </div>
                 <p>{{ data.info.body1 }}</p>
@@ -154,26 +150,16 @@ event.on('lang', init);
 
 .bb {
     border-radius: 3px;
-    border: 1px solid rgba(255, 255, 255, 0.452);
-    border-bottom: 2px solid white;
-}
-
-.light-bb {
     border: 1px solid var(--bs-orange);
-    border-bottom: 2px solid var(--bs-orange) !important;
+    border-bottom: 2px solid var(--bs-orange);
 }
 
 hr {
     width: 100%;
     height: 5px;
-    color: white;
+    color: var(--bs-orange);
+    -webkit-text-stroke: 1px var(--bs-orange);
     opacity: 1;
-    -webkit-text-stroke: 1px white;
-}
-
-.light-hr {
-    color: var(--bs-orange) !important;
-    -webkit-text-stroke: 1px var(--bs-orange) !important;
 }
 
 .card {

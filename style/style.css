@@ -8,11 +8,7 @@
     display: inline-block;
     text-align: center;
     vertical-align: middle;
-    filter: brightness(0) invert(1)
-}
-
-.light-logo {
-    filter: invert(62%) sepia(20%) saturate(7330%) hue-rotate(350deg) brightness(99%) contrast(101%) !important;
+    filter: invert(62%) sepia(20%) saturate(7330%) hue-rotate(350deg) brightness(99%) contrast(101%);
 }
 
 body {
@@ -71,12 +67,12 @@ ul li a::before {
     white-space: nowrap;
     transform: translateY(4px);
     position: absolute;
-    color: white;
+    color: var(--bs-orange);
     width: 0;
     overflow: hidden;
     transition: 0.4s;
-    border-right: 3px solid white;
-    -webkit-text-stroke: 1px white;
+    border-right: 3px solid var(--bs-orange);
+    -webkit-text-stroke: 1px var(--bs-orange);
 
 }
 
@@ -91,8 +87,8 @@ a:hover {
 ul li a:active::before,
 ul li a:hover::before {
     width: 100%;
-    color: white;
-    filter: drop-shadow(0 0 3px white);
+    color: var(--bs-orange);
+    filter: drop-shadow(0 0 0px var(--bs-orange));
 }
 
 .light-color:active::before,
@@ -101,18 +97,6 @@ ul li a:hover::before {
     filter: drop-shadow(0 0 0px var(--bs-orange));
 }
 
-.shadow {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.336) !important;
-}
-
-.light-shadow {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.123) !important;
-}
-
 .border-color {
-    border-color: white;
-}
-
-.light-border-color {
     border-color: var(--bs-orange);
 }

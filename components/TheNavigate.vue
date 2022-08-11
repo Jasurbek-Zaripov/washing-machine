@@ -1,8 +1,8 @@
 <template>
     <div class="head" :class="mode && 'light'">
-        <header class="row shadow px-3 mb-3" :class="mode && 'light-shadow'">
+        <header class="row shadow px-3 mb-3">
             <div class="col d-flex justify-content-start align-items-end">
-                <img class="ms-5" :src="mode ? '/company/orange.png' : '/company/dark.png'" style="height: 45px;">
+                <img class="ms-5" src="/company/orange.png" style="height: 45px;">
             </div>
             <div class="col d-flex justify-content-start align-items-center">
                 <nav>
@@ -26,9 +26,8 @@
                 </nav>
             </div>
             <div class="col d-flex align-items-center justify-content-center">
-                <a class="coll" :class="mode && 'light-coll'" href="tel://+998999891414"><img class="logo"
-                        :class="mode ? 'light-logo' : ''" height="25px" style="height: 25px;" src="/icons/call.svg"
-                        alt=""></a>
+                <a class="coll" href="tel://+998999891414"><img class="logo" height="25px" style="height: 25px;"
+                        src="/icons/call.svg" alt=""></a>
                 <h3 class="h1 mx-3">+998 99 989 14 14</h3>
                 <div class="ms-2" style="cursor: pointer;" @click="change()">
                     <img height="27px" :src="data.img" alt="">
@@ -91,20 +90,12 @@ function change() {
     border: 2px solid white;
     border-radius: 3px;
     transition: 0.4s;
+    border-color: var(--bs-orange);
 }
 
 .coll:active,
 .coll:hover {
     border: 2px solid white;
-    box-shadow: 0 0 7px 2px rgb(255 255 255 / 71%);
-}
-
-.light-coll {
-    border-color: var(--bs-orange) !important;
-}
-
-.light-coll:active,
-.light-coll:hover {
     border-color: var(--bs-orange) !important;
     box-shadow: 0 0.5rem 7px -0.5px var(--bs-orange) !important;
 }

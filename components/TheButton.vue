@@ -28,33 +28,23 @@ event.on('mode', (bol) => {
 <style scoped>
 a {
     position: relative;
-    background-color: white;
     text-transform: uppercase;
     font-size: 1em;
     letter-spacing: 0.1em;
     padding: 10px 30px;
     transition: 0.5s;
     text-decoration: none;
-    color: white;
-}
-
-.light-btn {
     color: var(--bs-orange);
     background-color: var(--bs-orange);
 }
 
 a:hover {
     letter-spacing: 0.25em;
-    background-color: white;
-    color: white;
-    box-shadow: 0 0.5em 7px -0.5px white;
-}
-
-.light-btn:hover {
     background-color: var(--bs-orange);
     color: var(--bs-orange);
     box-shadow: 0 0.5em 7px -0.5px var(--bs-orange);
 }
+
 
 a::before {
     content: '';
@@ -85,14 +75,14 @@ a i::before {
     left: 80%;
     width: 14px;
     height: 7px;
-    border: 2px solid white;
+    border: 2px solid;
     background-color: var(--bs-gray-dark);
     transform: translateX(-50%);
     transition: 0.5s;
+    border-color: var(--bs-orange);
 }
 
 .light-btn i::before {
-    border-color: var(--bs-orange);
     background-color: white;
 }
 
@@ -104,18 +94,18 @@ a:hover i::before {
 a i::after {
     content: '';
     left: 20%;
-    bottom: -1.5px;
+    bottom: -2px;
     width: 14px;
     height: 7px;
     position: absolute;
-    border: 2px solid white;
+    border: 2px solid;
     background-color: #27282c;
     transform: translateX(-50%);
     transition: 0.5s;
+    border-color: var(--bs-orange);
 }
 
 .light-btn i::after {
-    border-color: var(--bs-orange);
     background-color: white;
 }
 
