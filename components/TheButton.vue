@@ -28,38 +28,43 @@ event.on('mode', (bol) => {
 <style scoped>
 a {
     position: relative;
-    background-color: transparent;
-    color: white;
-    text-decoration: none;
+    background-color: white;
     text-transform: uppercase;
-    font-size: 0.5em;
+    font-size: 1em;
     letter-spacing: 0.1em;
-    font-weight: 400;
     padding: 10px 30px;
-    transition: 0.4s;
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
 }
 
 .light-btn {
-    color: var(--bs-gray-dark) !important;
+    color: var(--bs-orange);
+    background-color: var(--bs-orange);
 }
 
-a:active,
 a:hover {
     letter-spacing: 0.25em;
-    background-color: transparent;
-    box-shadow: 0 0 8px 4px rgba(255, 255, 255, 0.479);
+    background-color: white;
+    color: white;
+    box-shadow: 0 0.5em 7px -0.5px white;
 }
 
-.light-btn:active,
 .light-btn:hover {
-    box-shadow: 0 0.5rem 7px -0.5px var(--bs-gray-dark) !important;
+    background-color: var(--bs-orange);
+    color: var(--bs-orange);
+    box-shadow: 0 0.5em 7px -0.5px var(--bs-orange);
 }
 
 a::before {
     content: '';
     position: absolute;
     inset: 2px;
-    background-color: transparent;
+    background-color: var(--bs-gray-dark);
+}
+
+.light-btn::before {
+    background-color: white;
 }
 
 a span {
@@ -71,69 +76,51 @@ a i {
     position: absolute;
     inset: 0;
     display: block;
-    border: 2px solid white;
 }
-
-.light-btn i {
-    border-color: var(--bs-gray-dark) !important;
-}
-
 
 a i::before {
     content: '';
     position: absolute;
-    top: -11px;
-    left: 100%;
-    transform: translateX(0%);
-    width: 10px;
-    height: 10px;
-    background-color: transparent;
+    top: -2.5px;
+    left: 80%;
+    width: 14px;
+    height: 7px;
     border: 2px solid white;
-    transition: 0.4s;
+    background-color: var(--bs-gray-dark);
+    transform: translateX(-50%);
+    transition: 0.5s;
 }
 
 .light-btn i::before {
-    border-color: var(--bs-gray-dark) !important;
+    border-color: var(--bs-orange);
+    background-color: white;
 }
 
-a:active i::before,
 a:hover i::before {
-    left: 0%;
-    transform: translateX(-46%) rotate(62deg);
-    box-shadow: 34px 21px white;
-}
-
-.light-btn:active i::before,
-.light-btn:hover i::before {
-    box-shadow: 34px 21px var(--bs-gray-dark) !important;
+    width: 20px;
+    left: 20%;
 }
 
 a i::after {
     content: '';
+    left: 20%;
+    bottom: -1.5px;
+    width: 14px;
+    height: 7px;
     position: absolute;
-    bottom: -11px;
-    left: 0;
-    transform: translateX(-100%);
-    width: 10px;
-    height: 10px;
-    background-color: transparent;
     border: 2px solid white;
-    transition: 0.4s;
+    background-color: #27282c;
+    transform: translateX(-50%);
+    transition: 0.5s;
 }
 
 .light-btn i::after {
-    border-color: var(--bs-gray-dark) !important;
+    border-color: var(--bs-orange);
+    background-color: white;
 }
 
-a:active i::after,
 a:hover i::after {
-    left: 100%;
-    transform: translateX(-46%) rotate(-62deg);
-    box-shadow: 34px -21px white;
-}
-
-.light-btn:active i::after,
-.light-btn:hover i::after {
-    box-shadow: 34px -21px var(--bs-gray-dark) !important;
+    width: 20px;
+    left: 80%;
 }
 </style>

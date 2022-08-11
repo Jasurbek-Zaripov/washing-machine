@@ -4,7 +4,7 @@
         <div class="row mt-5">
             <div class="col d-flex align-items-center justify-content-center" v-for="info of data.items"
                 :key="info.img">
-                <div class="card mb-5" :class="mode && 'light-card'"
+                <div class="card mb-5" :class="mode ? 'light-border-color' : 'border-color'"
                     style="max-width: 18rem; min-height: 155px;min-width: 350px;">
                     <div class="card-header"> </div>
                     <div class="card-body">
@@ -27,7 +27,7 @@
             </div>
             <div class="row">
                 <div class="col mb-5" v-for="(problem, index) of data.problems" :key="index">
-                    <div class="card shadow" :class="mode && 'light-card light-shadow'" style="width: 18rem;">
+                    <div class="card shadow" :class="mode && 'light-shadow'" style="width: 18rem;">
                         <img :src="problem.img" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="height: 3rem; overflow-y: hidden;">{{ problem.title }}</h5>
@@ -50,9 +50,9 @@
             </div>
         </div>
         <div class="mt-5">
-            <h3 class="text-center">{{ data.steps.title }}</h3>
+            <h3 class="text-center mb-5">{{ data.steps.title }}</h3>
             <div class="d-flex justify-content-between" style="flex-wrap: wrap;">
-                <div class="step-body" :class="mode && 'light-shadow'" v-for="(step, idx) of data.steps.items"
+                <div class="step-body shadow" :class="mode && 'light-shadow'" v-for="(step, idx) of data.steps.items"
                     :key="idx">
                     <div class="w-50 p-3">
                         <h1>{{ '0' + (idx + 1) }}</h1>
@@ -66,18 +66,18 @@
         <div class="mt-5">
             <h3 class="text-center">{{ data.logo.title }}</h3>
             <div class="d-flex align-items-center justify-content-center" style="flex-wrap: wrap;">
-                <img v-for="logo of data.logo.items" class="m-2 p-2"
+                <img v-for="logo of data.logo.items" class="m-2 p-2 shadow" :class="mode && 'light-shadow'"
                     style="height: 50px; background-color: white; border:2px solid white;border-radius: 5px;"
                     :key="logo" :src="logo" alt="">
             </div>
             <div id="contact"></div>
         </div>
-        <div class="mt-5 row">
-            <div class="col google-maps">
+        <div class="mt-5 row" style="flex-direction: column-reverse;">
+            <div class="col google-maps mt-3">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.7106757177926!2d69.31897395119698!3d41.31515730833051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef530d9035537%3A0xf1fc85384c4133a7!2sTenge%20Bank!5e0!3m2!1sru!2s!4v1660135169517!5m2!1sru!2s"
-                    width="100%" height="100%" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    width="100%" height="100%" style="border:0; border-radius: 5px; min-height: 25rem;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="col">
                 <div class="d-flex align-items-center justify-content-center mb-2">
@@ -134,7 +134,7 @@ event.on('lang', init);
     position: relative;
     height: 300px;
     width: 48%;
-    background-color: white;
+    background-color: #ffffffa1;
     color: black;
 }
 
@@ -159,9 +159,8 @@ event.on('lang', init);
 }
 
 .light-bb {
-    border: 1px solid var(--bs-gray-dark);
-    border-bottom: 2px solid var(--bs-gray-dark) !important;
-
+    border: 1px solid var(--bs-orange);
+    border-bottom: 2px solid var(--bs-orange) !important;
 }
 
 hr {
@@ -173,17 +172,12 @@ hr {
 }
 
 .light-hr {
-    color: var(--bs-gray-dark) !important;
-    -webkit-text-stroke: 1px var(--bs-gray-dark) !important;
+    color: var(--bs-orange) !important;
+    -webkit-text-stroke: 1px var(--bs-orange) !important;
 }
 
 .card {
     background-color: transparent;
-    border-color: white;
     margin: auto;
-}
-
-.light-card {
-    border-color: var(--bs-gray-dark) !important;
 }
 </style>

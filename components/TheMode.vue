@@ -48,6 +48,13 @@ function mode(eve) {
     transition: opacity 150ms, transform 500ms cubic-bezier(.26, 2, .46, .71);
 }
 
+.sun-icon-wrapper::after {
+    content: 'sun';
+    position: absolute;
+    top: -4px;
+    left: 24px;
+}
+
 .toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
     opacity: 1;
     transform: rotate(0deg);
@@ -69,6 +76,13 @@ function mode(eve) {
     opacity: 1;
     transform: rotate(0deg);
     transition: opacity 150ms, transform 500ms cubic-bezier(.26, 2.5, .46, .71);
+}
+
+.moon-icon-wrapper::after {
+    content: 'moon';
+    position: absolute;
+    top: -4px;
+    left: 24px;
 }
 
 .toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {

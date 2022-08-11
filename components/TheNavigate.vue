@@ -1,8 +1,8 @@
 <template>
     <div class="head" :class="mode && 'light'">
         <header class="row shadow px-3 mb-3" :class="mode && 'light-shadow'">
-            <div class="col d-flex justify-content-start align-items-center">
-                <img src="/company/dark.png" style="height: 25px;">
+            <div class="col d-flex justify-content-start align-items-end">
+                <img class="ms-5" :src="mode ? '/company/orange.png' : '/company/dark.png'" style="height: 45px;">
             </div>
             <div class="col d-flex justify-content-start align-items-center">
                 <nav>
@@ -95,13 +95,13 @@ function change() {
 }
 
 .light-coll {
-    border-color: var(--bs-gray-dark) !important;
+    border-color: var(--bs-orange) !important;
 }
 
 .light-coll:active,
 .light-coll:hover {
-    border-color: var(--bs-gray-dark) !important;
-    box-shadow: 0 0.5rem 7px -0.5px var(--bs-gray-dark) !important;
+    border-color: var(--bs-orange) !important;
+    box-shadow: 0 0.5rem 7px -0.5px var(--bs-orange) !important;
 }
 
 .logo {

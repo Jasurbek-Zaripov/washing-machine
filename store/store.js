@@ -96,7 +96,7 @@ store.set('ru/lang', '/icons/ru.svg');
 store.set('uz/lang', '/icons/uz.svg');
 store.set('ru/menu', {
     home: 'Главная',
-    about: 'Цени',
+    about: 'Цены',
     contact: 'Контакт'
 });
 store.set('uz/menu', {

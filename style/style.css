@@ -12,7 +12,7 @@
 }
 
 .light-logo {
-    filter: brightness(0%) !important;
+    filter: invert(62%) sepia(20%) saturate(7330%) hue-rotate(350deg) brightness(99%) contrast(101%) !important;
 }
 
 body {
@@ -62,7 +62,7 @@ ul li a {
 
 .light-color::before {
     color: var(--bs-gray-dark) !important;
-    border-color: var(--bs-gray-dark) !important;
+    border-color: var(--bs-orange) !important;
     -webkit-text-stroke: 0px var(--bs-gray-dark) !important;
 }
 
@@ -97,8 +97,8 @@ ul li a:hover::before {
 
 .light-color:active::before,
 .light-color:hover::before {
-    color: var(--bs-gray-dark) !important;
-    filter: drop-shadow(0 0 0px #343a40);
+    color: var(--bs-orange) !important;
+    filter: drop-shadow(0 0 0px var(--bs-orange));
 }
 
 .shadow {
@@ -107,4 +107,12 @@ ul li a:hover::before {
 
 .light-shadow {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.123) !important;
+}
+
+.border-color {
+    border-color: white;
+}
+
+.light-border-color {
+    border-color: var(--bs-orange);
 }
