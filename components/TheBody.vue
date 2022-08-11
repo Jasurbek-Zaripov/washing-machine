@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col mb-5" v-for="(problem, index) of data.problems" :key="index">
                     <div class="card shadow" style="width: 18rem;">
-                        <img :src="problem.img" class="card-img-top" alt="...">
+                        <img :src="problem.img" style="width: 286px;height: 203px;" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="height: 3rem; overflow-y: hidden;">{{ problem.title }}</h5>
                             <p class="card-text" style="height: 8rem; overflow-y: hidden;">{{ problem.body }}</p>
