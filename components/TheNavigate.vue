@@ -43,7 +43,12 @@
 
 <script setup>
 import { lang, store, event } from '@/store/store';
-let mode = ref(false);
+let mode = ref(true);
+useHead({
+    bodyAttrs: {
+        class: mode.value ? 'light' : ''
+    }
+});
 event.on('mode', (data) => {
     mode.value = data;
     useHead({

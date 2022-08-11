@@ -96,7 +96,7 @@
 
 <script setup>
 import { store, event, lang } from "@/store/store";
-let mode = ref(false);
+let mode = ref(true);
 event.on('mode', (data) => {
     mode.value = data;
 });

@@ -1,7 +1,7 @@
 <template>
     <div>
         <label class="p-3">
-            <input class='toggle-checkbox' type='checkbox' @change="mode" />
+            <input class='toggle-checkbox' type='checkbox' @change="mode" checked />
             <div class='toggle-slot'>
                 <div class='sun-icon-wrapper'>
                     <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>

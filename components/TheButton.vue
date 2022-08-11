@@ -15,7 +15,7 @@ const langs = {
 };
 let data = ref({
     name: langs.ru,
-    mode: false
+    mode: true
 });
 event.on('lang', () => {
     data.value.name = lang.now == 'ru' ? langs.ru : langs.uz;
