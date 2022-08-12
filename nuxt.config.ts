@@ -2,6 +2,10 @@ import { defineNuxtConfig } from 'nuxt';
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+    runtimeConfig: {
+        port: process.env.PORT || 3000,
+        host: process.env.HOST || 'localhost'
+    },
     app: {
         head: {
             htmlAttrs: {

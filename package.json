@@ -4,12 +4,13 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "start": "nuxt preview",
+    "start": "node .output/server/index.mjs",
     "preview": "nuxt preview"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nuxt": "3.0.0-rc.6"
+  },
   "dependencies": {
-    "nuxt": "3.0.0-rc.6",
     "mitt": "^3.0.0"
   }
 }
