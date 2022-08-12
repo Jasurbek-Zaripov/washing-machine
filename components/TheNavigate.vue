@@ -1,7 +1,7 @@
 <template>
     <div class="head" :class="mode && 'light'">
         <header class="row shadow px-3 mb-3">
-            <div class="col d-flex justify-content-start align-items-end">
+            <div class="col d-flex justify-content-start align-items-end" id="display-none">
                 <img class="ms-5" src="/company/orange.png" style="height: 45px;">
             </div>
             <div class="col d-flex justify-content-start align-items-center">

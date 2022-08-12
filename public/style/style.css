@@ -100,3 +100,25 @@ ul li a:hover::before {
 .border-color {
     border-color: var(--bs-orange);
 }
+
+
+@media only screen and (max-width: 1006px) {
+    #display-none {
+        display: none !important;
+    }
+
+    .h1,
+    h1 {
+        font-size: calc(1rem + .6vw);
+    }
+
+    .h3,
+    h3 {
+        font-size: calc(0.6rem + .6vw);
+    }
+
+    body {
+        font-size: calc(0.7rem + .6vw);
+    }
+
+}

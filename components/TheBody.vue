@@ -29,7 +29,9 @@
                         <img :src="problem.img" style="width: 286px;height: 203px;" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="height: 3rem; overflow-y: hidden;">{{ problem.title }}</h5>
-                            <p class="card-text" style="height: 8rem; overflow-y: hidden;">{{ problem.body }}</p>
+                            <p class="card-text card-text-dinamic">
+                                {{ problem.body }}
+                            </p>
                             <TheButton style="margin: 2rem auto 0.6rem auto;width: fit-content;" />
                         </div>
                     </div>
@@ -49,8 +51,8 @@
         </div>
         <div class="mt-5">
             <h3 class="text-center mb-5">{{ data.steps.title }}</h3>
-            <div class="d-flex justify-content-between" style="flex-wrap: wrap;">
-                <div class="step-body shadow" v-for="(step, idx) of data.steps.items" :key="idx">
+            <div class="row">
+                <div class="col-xl-5 shadow m-3 step-body" v-for="(step, idx) of data.steps.items" :key="idx">
                     <div class="w-50 p-3">
                         <h1>{{ '0' + (idx + 1) }}</h1>
                         <h3 class="text-uppercase">{{ step.name }}</h3>
@@ -128,8 +130,6 @@ event.on('lang', init);
     border-radius: 3px;
     display: flex;
     position: relative;
-    height: 300px;
-    width: 48%;
     background-color: #ffffffa1;
     color: black;
 }
@@ -165,5 +165,9 @@ hr {
 .card {
     background-color: transparent;
     margin: auto;
+}
+
+.card-text-dinamic {
+    height: calc(5.5rem + 0.6vw);
 }
 </style>

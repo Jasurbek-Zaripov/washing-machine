@@ -10,7 +10,7 @@ export default defineNuxtConfig({
             script: [
                 { src: "https://code.iconify.design/1/1.0.4/iconify.min.js" }
             ],
-            title: 'Master stirka',
+            title: 'Master stiral',
             link: [
                 {
                     href: "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css",
