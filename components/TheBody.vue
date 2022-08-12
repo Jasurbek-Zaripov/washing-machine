@@ -72,7 +72,7 @@
         <div class="mt-5 row" style="flex-direction: column-reverse;">
             <div class="col google-maps mt-3">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.7106757177926!2d69.31897395119698!3d41.31515730833051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef530d9035537%3A0xf1fc85384c4133a7!2sTenge%20Bank!5e0!3m2!1sru!2s!4v1660135169517!5m2!1sru!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191884.74521379903!2d69.13894024105231!3d41.282770138343835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQsNGI0LrQtdC90YIsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1660300508041!5m2!1sru!2s"
                     width="100%" height="100%" style="border:0; border-radius: 5px; min-height: 25rem;"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>

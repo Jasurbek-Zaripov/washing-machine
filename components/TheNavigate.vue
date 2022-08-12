@@ -28,7 +28,7 @@
             <div class="col d-flex align-items-center justify-content-center">
                 <a class="coll" href="tel://+998999891414"><img class="logo" height="25px" style="height: 25px;"
                         src="/icons/call.svg" alt=""></a>
-                <h3 class="h1 mx-3">+998 99 989 14 14</h3>
+                <h3 class="h1 mx-3 text-nowrap">+998 99 989 14 14</h3>
                 <div class="ms-2" style="cursor: pointer;" @click="change()">
                     <img height="27px" :src="data.img" alt="">
                 </div>

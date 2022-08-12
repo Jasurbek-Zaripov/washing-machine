@@ -2,9 +2,8 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "start": "nuxt dev",
     "generate": "nuxt generate",
-    "start": "node .output/server/index.mjs",
     "preview": "nuxt preview"
   },
   "devDependencies": {
