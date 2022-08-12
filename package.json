@@ -7,10 +7,9 @@
     "start": "nuxt preview",
     "preview": "nuxt preview"
   },
-  "devDependencies": {
-    "nuxt": "3.0.0-rc.6"
-  },
+  "devDependencies": {},
   "dependencies": {
+    "nuxt": "3.0.0-rc.6",
     "mitt": "^3.0.0"
   }
 }
