@@ -3,8 +3,8 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "start": "node .output/server/index.mjs",
     "generate": "nuxt generate",
+    "start": "nuxt preview",
     "preview": "nuxt preview"
   },
   "devDependencies": {

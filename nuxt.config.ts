@@ -20,7 +20,7 @@ export default defineNuxtConfig({
                 },
                 {
                     rel: "stylesheet",
-                    href: './style/style.css'
+                    href: '/style/style.css'
                 },
             ]
         }
