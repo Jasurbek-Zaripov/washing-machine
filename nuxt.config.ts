@@ -2,6 +2,13 @@ import { defineNuxtConfig } from 'nuxt';
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+    nitro: {
+        preset: 'node-server',
+    },
+    css: [
+        '@/assets/style/style.css'
+    ],
+    build: { cache: true, corejs: '3', parallel: true, },
     app: {
         head: {
             htmlAttrs: {
@@ -18,10 +25,6 @@ export default defineNuxtConfig({
                     integrity:
                         'sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC',
                     crossorigin: 'anonymous',
-                },
-                {
-                    rel: 'stylesheet',
-                    href: '/style/style.css',
                 },
                 {
                     rel: 'icon',
@@ -53,20 +56,20 @@ export default defineNuxtConfig({
                     name: 'description',
                     content: 'ремонт стиральных машин в Ташкенте',
                 },
-                { property: 'og:locale', content: 'ru_RU' },
-                { property: 'og:type', content: 'website' },
+                { name: 'og:locale', content: 'ru_RU' },
+                { name: 'og:type', content: 'website' },
                 {
-                    property: 'og:title',
+                    name: 'og:title',
                     content:
                         'Master stiral - ремонт стиральных машин в Ташкенте',
                 },
                 {
-                    property: 'og:description',
+                    name: 'og:description',
                     content: 'ремонт стиральных машин в Ташкенте',
                 },
-                { property: 'og:url', content: 'http://master-stiral.uz/' },
-                { property: 'og:site_name', content: 'Master stiral' },
-                { property: 'og:image', content: '/favicon.png' },
+                { name: 'og:url', content: 'http://master-stiral.uz/' },
+                { name: 'og:site_name', content: 'Master stiral' },
+                { name: 'og:image', content: '/favicon.png' },
                 { name: 'twitter:image', content: '/favicon.png' },
                 { name: 'twitter:card', content: 'summary_large_image' },
                 {
@@ -86,5 +89,5 @@ export default defineNuxtConfig({
                 { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
             ],
         },
-    },
+    }
 });

@@ -10,8 +10,7 @@
     display: inline-block;
     text-align: center;
     vertical-align: middle;
-    filter: invert(62%) sepia(20%) saturate(7330%) hue-rotate(350deg)
-        brightness(99%) contrast(101%);
+    filter: invert(62%) sepia(20%) saturate(7330%) hue-rotate(350deg) brightness(99%) contrast(101%);
 }
 
 body {
@@ -117,6 +116,7 @@ ul li a:hover::before {
     h3 {
         font-size: calc(0.6rem + 0.6vw);
     }
+
     .about {
         font-size: calc(1rem + 0.6vw);
     }
@@ -125,6 +125,7 @@ ul li a:hover::before {
         font-size: calc(0.7rem + 0.6vw);
     }
 }
+
 @media only screen and (max-width: 738px) {
     .navigator-nav {
         justify-content: center !important;
